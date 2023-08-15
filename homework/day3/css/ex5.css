@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    text-align: center;
+}
+
+.box{
+    font-size: 30px;
+    background: #839aca;
+    display: inline-block;
+    color: white;
+    height: 50px;
+    width: 190px;
+    line-height: 50px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+.special{
+    color: #01b2ee;
+}
+
+p{
+    margin: 20px 0;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: black;
+    color: white;
+}

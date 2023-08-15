@@ -1,0 +1,24 @@
+/* attribute selecctor */
+.menu a[target]{
+    color: red;
+}
+
+/* .menu a[href='https://fullstack.edu.vn']{
+    color: black;
+} */
+
+/* .menu a[href^='https://fullstack.edu.vn']{
+    color: black;
+} */
+
+.menu a[href*='fullstack.edu.vn']{
+    color: black;
+}
+
+.images a[href$=".jpg"]{
+    color: red;
+}
+
+[class^="item-"]{
+    border: 1px solid red;
+}

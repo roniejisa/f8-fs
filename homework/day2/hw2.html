@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+            body{
+                max-width: 480px;
+                margin: 0 auto;
+            }
+			table {
+				border-collapse: collapse;
+				width: 100%;
+                border-color: green;
+                
+			}
+			tr:first-child th {
+				text-align: right;
+                font-size: 52px;
+                padding-bottom: 20px;
+			}
+
+            td{
+                border: 2px solid #9fc8b8;
+                text-align: center;
+                font-size: 48px;
+                font-weight: bold;
+            }
+
+            tr:last-child td{
+                border-bottom: none;
+            }
+
+            tr:nth-child(n) td{
+                border-right: none;
+            }
+
+            tr td:first-child{
+                border-left: none;
+            }
+		</style>
+	</head>
+	<body>
+		<table border="0">
+			<tr>
+				<th colspan="100%">
+                    9 + 9
+                </th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>+</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>5</td>
+				<td>6</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>x</td>
+			</tr>
+			<tr>
+				<td>c</td>
+				<td>0</td>
+				<td>=</td>
+				<td>/</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+#title{
+    color: red;
+}
+
+.title{
+    color: green;
+}
+
+p{
+    color: blueviolet;
+}
+
+.content h2{
+    color: yellow;
+}
+
+.box h2{
+    color: wheat;
+}
+
+.content > h2{
+    color: red;
+}
+
+.content > div > h2{
+    color: green;
+}
+
+.menu > li > a {
+    color: red;
+}
+
+h3.title.first{
+    color: green;
+}
+h3.title.last{
+    color: blue;
+}

@@ -1,0 +1,7 @@
+.form-control{
+    display: flex;
+}
+
+.form-control>label{
+    flex:  0 0 5%;
+}

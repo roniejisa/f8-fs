@@ -1,0 +1,7 @@
+.box h2 ~ p, .box h2 ~ div p,.box h4 + h4{
+    color: red;
+}
+
+.todos input:checked + span{
+    color: red;
+}

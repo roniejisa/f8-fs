@@ -1,0 +1,31 @@
+.tab-address{
+    display: inline-flex;
+    border: 1px solid #af9458;
+}
+
+.tab-address a{
+    padding: 8px 15px;
+    display: block;
+    text-decoration: none;
+    color: #af9458;
+}
+
+.tab-address a.tab-address--active{
+    background: #af9458;
+    color: white;
+}
+
+.infomation{
+    display: flex;
+    margin-top: 15px;
+}
+
+.infomation__body{
+    flex: 0 0 20%;
+    padding: 30px;
+    background: #f6f6f6;
+}
+
+.infomation__map{
+    flex: 0 0 80%;
+}
