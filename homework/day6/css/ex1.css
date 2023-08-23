@@ -1,0 +1,123 @@
+@font-face {
+	font-family: OpenSans;
+	src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: OpenSans;
+}
+
+.menu {
+	display: flex;
+	border: 1px solid #eeeeee;
+	align-items: center;
+}
+.menu a {
+	color: #666666;
+}
+.menu > a {
+	text-align: center;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.menu > ul {
+	border-right: 1px solid #eeeeee;
+}
+.menu ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	flex: 1;
+	list-style: none;
+}
+
+.menu > ul > li {
+	padding: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: transparent;
+	position: relative;
+}
+
+.menu > ul > li > a {
+	display: block;
+	padding: 15px 10px;
+	text-decoration: none;
+}
+.menu > ul > li:not(:last-child) {
+	border-left-color: #eeeeee;
+}
+
+.menu > ul > li:last-child {
+	border-left-color: #eeeeee;
+	border-right-color: #eeeeee;
+}
+.menu > ul > li > a span {
+	margin-left: 10px;
+}
+.menu > ul > li > a span i {
+	transform: rotate(90deg);
+	font-size: 8px;
+}
+.menu > ul > li > a:hover {
+	background: #53a5d3;
+	color: white;
+}
+
+.menu ul ul {
+	display: none;
+	position: absolute;
+	box-shadow: 0 0 10px 0.1px #adadad79;
+	top: 115%;
+	left: 0;
+	width: 200px;
+}
+.menu > ul > li:hover ul,
+.menu ul ul:hover {
+	display: block;
+}
+
+.menu ul ul::after {
+	content: "";
+	height: 20px;
+	position: absolute;
+	width: 55%;
+	top: -10px;
+	background: #da919100;
+}
+
+.menu ul ul::before {
+	content: "";
+	position: absolute;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+	height: 0;
+	width: 0;
+	display: block;
+	top: -10px;
+	left: 10px;
+	filter: drop-shadow(0px 0px 15px black);
+}
+
+.menu ul ul li a {
+	display: block;
+	padding: 15px 10px;
+	text-decoration: none;
+	max-width: 200px;
+	width: 100%;
+}
+
+.menu ul ul li:not(:last-child) a {
+	border-bottom: 1px solid #eeeeee;
+}
+.menu ul ul li a:hover {
+	background: #53a5d3;
+	color: white;
+}

@@ -1,0 +1,24 @@
+.lists label:nth-child(1):active{
+    color: red;
+}
+
+.lists label:nth-child(2):active{
+    color: green;
+}
+
+.lists label:nth-child(3):active{
+    color: blue;
+}
+
+input[name="toggle"]{
+    display: hidden;
+}
+input[type="radio"]#red:checked ~.content{
+    color: red;
+}
+input[type="radio"]#blue:checked ~.content{
+    color: blue;
+}
+input[type="radio"]#green:checked ~.content{
+    color: green;
+}

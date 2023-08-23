@@ -1,0 +1,25 @@
+/* .content{
+    border: 1px solid red;
+    width: 50%;
+    height: 150px;
+    background: blue;
+}
+
+.box{
+    width: 50%;
+    height: 100%;
+    background: yellow;
+} */
+
+.content{
+    border: 1px solid red;
+    width: 50%;
+    height: 550px;
+    background: blue;
+}
+
+.box{
+    width: 50vw;
+    height: 100%;
+    background: yellow;
+}

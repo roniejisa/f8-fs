@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Bold.ttf);
+    font-weight: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 30px;
+    font-family: Roboto;
+    background: #ebf5fe;
+}
+
+.boxes{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.boxes .item{
+    flex: 0 0 33.33333%;
+    margin: 15px -30px;
+    padding: 15px;
+    box-shadow: 0 0 6px 2px rgb(172, 172, 172);
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: white;
+}
+
+.boxes .item a{
+    text-decoration: none;
+    color: #1d6be9;
+    font-weight: 700;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.boxes .item .top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.boxes .item .top span{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.pink{
+    background-image: linear-gradient(to right, #e3567d, white) ;
+}
+
+.green{
+    background-image: linear-gradient(to right, #50a6a4 , white);
+}
+
+.orange{
+    background-image: linear-gradient(to right, #e18436 , white);
+}
+
+.blue{
+    background-image: linear-gradient(to right, #296ecc , white);
+}
+.purple{
+    background-image: linear-gradient(to right, #6c2fca , white);
+}
+
+.green-solid{
+    background-image: linear-gradient(to right, #6b882f , white);
+}
+
+.border-pink:hover{
+    border-color: #e3567d;
+}
+
+.border-green:hover{
+    border-color: #50a6a4;
+}
+
+.border-orange:hover{
+    border-color: #e18436;
+}
+
+.border-blue:hover{
+    border-color: #296ecc;
+}
+
+.border-purple:hover{
+    border-color: #6c2fca;
+}
+
+.border-green-solid:hover{
+    border-color: #6b882f;
+}
+

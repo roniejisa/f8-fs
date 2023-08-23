@@ -1,0 +1,11 @@
+.about{
+    text-align: justify;
+    text-align-last: right;
+}
+
+.btn{
+    display: block;
+    /* position: relative;
+    left: 50%;
+    transform: translateX(-50%); */
+}

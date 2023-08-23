@@ -1,0 +1,32 @@
+body{
+    color: red;
+}
+
+/* initial */
+.box{
+    color: blue;
+    width: 200px;
+    height: 200px;
+}
+
+.children{
+    width: 200px;
+    height: 200px;
+    color: initial;
+}
+
+/* => Trở về mặc định của trình duyệt */
+
+/* inherit - unset */
+.grandparent{
+    color: blue;
+}
+.parent{
+    color: green;
+}
+.child{
+    color: inherit;
+    color: unset;
+    /* color: initial; */
+}
+/* => Lớp cha trước nó */

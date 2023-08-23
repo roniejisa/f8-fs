@@ -1,0 +1,48 @@
+.title:hover{
+    color: red;
+}
+
+.btn:active{
+    background: green;
+    color: white
+}
+
+.btn:focus{
+    background: yellowgreen;
+    color: orange;
+}
+
+a:focus{
+    background: red;
+    color: pink;
+}
+
+input[disabled]
+/* input:disabled */
+{
+    background: pink;
+}
+
+.content :not(.active){
+    color: pink;
+}
+
+.products h2:first-child{
+    color: red;
+}
+
+.products h2:last-child{
+    color: green;
+}
+
+.products .item:first-of-type{
+   color: red;
+}
+
+.products .item:last-of-type{
+   color: green
+}
+
+.posts h3:nth-of-type(2n+1){
+    color: red;
+}

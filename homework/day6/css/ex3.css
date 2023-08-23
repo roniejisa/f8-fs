@@ -1,0 +1,194 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Regular.ttf);
+    display: swap;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito/Nunito-Bold.ttf);
+    font-weight: bold;
+    display: swap;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Nunito;
+    margin: 0;
+    background-image: url(../images/login-bg2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.form-login{
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 10px 0.3px #666666;
+    border-radius: 10px;
+    background:white;
+}
+
+
+.form-login .form-login__left{
+    flex: 0 0 350px;
+    max-width: 350px;
+    padding: 100px 15px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #eb5f56;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.form-login .form-login__left p{
+    margin-top: 20px;
+}
+
+.form-login .form-login__left .read-more{
+    display: block;
+    padding: 10px 25px;
+    color: #eb5f56;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 25px auto 30px;
+}
+
+.form-login .form-login__left ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.form-login .form-login__left ul a{
+    display: flex;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    background: #00000026;
+}
+
+.form-login .form-login__left .btn-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #eb5f56;
+    border: none;
+    background: white;
+    font-weight: bold;
+    box-shadow: 0 0 6px 0.2px #0000004b;
+}
+
+.form-login .form-login__left span{
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    color: #eb5f56;
+    border-radius: 5px;
+}
+
+.form-login .form-login__right{
+    flex: 0 0 calc(100% - 350px);
+    max-width: calc(100% - 350px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 40px 35px 50px;
+}
+
+.form-login .form-login__right h2{
+    position: relative;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.form-login .form-login__right h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 50px;
+    background: #eb5f56;
+    height: 1px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    bottom: -10px;
+}
+
+.form-login .form-login__right h2 span{
+    color: #eb5f56;
+}
+
+.form-login .form-login__right input{
+    padding: 10px 20px;
+    border: 1px solid #efefef;
+    width: 100%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 30px 0.5px #efefef;
+    border-radius: 5px;
+}
+
+.form-login .form-login__bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form-login .form-login__bottom label{
+    display: flex;
+    align-items: center;
+}
+.form-login .form-login__bottom label span{
+    white-space: nowrap;
+    margin-left: 10px;
+}
+.form-login .form-login__bottom label input{
+    margin: 0;
+    padding: 0;
+}
+
+.form-login .form-login__right a{
+    text-decoration: none;
+    color: black;
+}
+
+.form-login .form-login__right a:hover{
+    color: #eb5f56;
+}
+
+.form-login .form-login__right button{
+    width: 100%;
+    background: #eb5f56;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.bottom-no-account{
+    text-align: center;
+}

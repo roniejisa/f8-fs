@@ -1,0 +1,16 @@
+
+
+.box{
+    padding: 30px;
+    color: red;
+    border: 1px solid red;
+}
+
+span{
+    padding: 50px 20px;
+    border: 1px solid red;
+    background: red;
+    /* display: inline-block; */
+}
+
+/* => Pading vẫn được nhưng sẽ đứng nguyên ở vị trí hiện tại khi đang display là inline */

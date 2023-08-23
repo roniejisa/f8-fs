@@ -1,0 +1,26 @@
+body{
+    font-weight: normal;
+    font-style: normal;
+    word-spacing: 5px;
+}
+
+/* p{
+    text-transform: ;
+} */
+
+h3 a{
+    text-decoration: underline overline line-through;
+}
+
+p.title{
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+.content{
+    text-indent: 30px;
+}
+
+.test{
+    word-break: break-all;
+}

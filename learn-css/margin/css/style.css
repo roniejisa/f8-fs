@@ -1,0 +1,20 @@
+.box{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    padding: 10px;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+/* Margin theo % thì đêu theo width của trình duyệt */
+
+span{
+    margin-top: 10px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    display: inline-block;
+}

@@ -1,0 +1,244 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: Lato;
+    src: url("../fonts/Lato-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Lobster;
+    src: url("../fonts/Lobster-Regular.ttf");
+    font-weight: 400;
+}
+
+body{
+    font-family: Lato;
+    padding: 90px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: Lobster;
+}
+.content{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.content span{
+    color: red;
+}
+/* Start Form */
+.group-form textarea,
+.group-form select,
+.group-form input{
+    outline: none;
+    width: 100%;
+    border: 1px solid #dddddd;
+}
+.group-form{
+    display: flex;
+    position: relative;
+    margin-bottom: 30px;
+    flex-direction: row-reverse;
+    min-height: 55px;
+}
+.group-form i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 8px;
+    color: #dddddd;
+}
+.group-form textarea ~ i{
+    top: 25px;
+}
+
+.group-form textarea{
+    resize: none;
+}
+
+.group-form label{
+    background-image: url(../images/image.png);
+    background-size: 100%;
+    display: block;
+    height: auto;
+    background-repeat: no-repeat;
+    background-color: #dddddd;
+    width: 60px;
+    position: relative;
+}
+
+label.name{
+    background-position-y: -1px;
+}
+
+label.email{
+    background-position-y: -86px;
+}
+
+label.phone{
+    background-position-y: -172px;
+}
+
+label.subject{
+    background-position-y: -258px;
+}
+
+label.message{
+    background-position-y: -345px;
+    background-position-x: -2px;
+}
+
+textarea:hover,
+select:hover,
+input:hover,
+textarea:focus,
+select:focus,
+input:focus {
+    border: 1px solid #333333;
+    outline: none;
+}
+
+textarea:active + label + i::before,
+select:active + label + i::before,
+input:active + label + i::before,
+textarea:focus + label + i::before,
+select:focus + label + i::before,
+input:focus + label + i::before{  
+    content: "\58";
+    color: #333333;
+}
+
+textarea:active + label,
+select:active + label,
+input:active + label,
+textarea:hover + label,
+select:hover + label,
+input:hover + label,
+textarea:focus + label,
+select:focus + label,
+input:focus + label{
+    background-color: #333333;
+}
+
+.group-form.email::before{
+    background-position: 60px 69px;
+}
+
+.group-form input,
+.group-form textarea,
+.group-form select{
+    padding: 18px 20px;
+}
+
+label::before{
+    content: 'Enter your name';
+    background: white;
+    position: absolute;
+    top: -65px;
+    width: fit-content;
+    color: white;
+    left: 30px;
+    white-space: nowrap;
+    padding: 15px;
+    display: none;
+    background: #333333;
+}
+
+label.email::before{
+    content: 'Enter your email';
+}
+
+label.phone::before{
+    content: 'Enter your phone';
+}
+
+label.subject::before{
+    content: 'Enter your subject';
+}
+
+label.message::before{
+    content: 'Enter your message';
+}
+
+label::after{
+    content: '';
+    border-width: 10px 16px 0px 16px;
+    border-color: #333333 transparent transparent;
+    position: absolute;
+    left: 59px;
+    top: -16px;
+    display: none;
+    border-style: solid;
+}
+select{
+    appearance: none;
+}
+
+textarea:active + label::before,
+select:active + label::before,
+input:active + label::before,
+textarea:focus + label::before,
+select:focus + label::before,
+input:focus + label::before,
+textarea:active + label::after,
+select:active + label::after,
+input:active + label::after,
+textarea:focus + label::after,
+select:focus + label::after,
+input:focus + label::after{
+    display: block;
+}
+
+.footer-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-form button{
+    background: #e83834;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    color: white;
+}
+
+.checkbox-label input{
+    display: none;
+}
+
+.checkbox-label span{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.checkbox-label span::before{
+    content: '';
+    display: block;
+    border: 3px solid #ebebeb;
+    height: 16px;
+    width: 16px;
+    margin-right: 16px;
+}
+
+.checkbox-label input:checked + span:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-width: 3px;
+    border-color: #333333 #333333 transparent transparent;
+    border-style: solid;
+    height: 3px;
+    width: 8px;
+    transform: rotate(135deg);
+    left: 4px;
+    top: 4px;
+}

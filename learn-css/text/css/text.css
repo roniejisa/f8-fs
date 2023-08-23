@@ -1,0 +1,43 @@
+.name{
+    color: green;
+}
+
+.hexa{
+    color: #ababab;
+}
+
+.rgb{
+    color: rgba(15, 200, 200, 0.653);
+}
+
+.hsl{
+    color: hsl(253, 88%, 41%);
+}
+
+.title{
+
+}
+body{
+    color: red;
+}
+
+.title::before{
+    content: '';
+    height: 3px;
+    display: block;
+    width: 20px;
+    background: yellowgreen;
+}
+
+.content p{
+    color: indigo;
+}
+
+.main{
+    color: unset;
+}
+
+.title{
+    color: inherit;
+    font-size: 10cm;
+}

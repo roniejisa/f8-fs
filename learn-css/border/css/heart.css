@@ -1,0 +1,26 @@
+.heart{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+}
+.heart::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 80px;
+    display: block;
+}
+
+.heart::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border: 80px solid red;
+    border-color: red transparent transparent transparent;
+    display: block;
+    margin-left: 10px;
+    margin-top: -20px;
+}

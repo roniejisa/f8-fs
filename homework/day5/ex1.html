@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/ex1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 class="title">Hey there</h1>
+    <p class="content"><span>We'd like to hear from you.</span> Send us your message or just say hi with our contact form or directly via phone, we love to chat.</p>
+    <form action="">
+        <div class="group-form">
+            <input type="text" id="name" placeholder="Your name">
+            <label class="name" for="name">
+            </label>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="group-form">
+            <input type="email" id="email" placeholder="your@domain.com">
+            <label class="email" for="email"></label>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="group-form">
+            <input type="text" id="phone" placeholder="your@domain.com">
+            <label class="phone" for="phone"></label>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="group-form">
+            <select name="subject">
+                <option hidden>Subject</option>
+                <option value="0">Subject</option>
+                <option value="2">One</option>
+                <option value="3">Two</option>
+                <option value="4">Three</option>
+            </select>
+            <label class="subject" for="subject"></label>
+            <i class="fa-solid fa-sort"></i>
+        </div>
+        <div class="group-form">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+            <label class="message" for="message"></label>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="footer-form">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Send me a copy of this message</span>
+            </label>
+            <button>SEND</button>
+        </div>
+    </form>
+</body>
+</html>

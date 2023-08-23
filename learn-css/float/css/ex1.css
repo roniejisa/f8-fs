@@ -1,0 +1,38 @@
+.box{
+    border: 1px solid red;
+}
+/* .box{
+    overflow: auto;
+} */
+
+.box::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col-1,.col-2{
+    width: 100px;
+    height: 100px;
+    background: green;
+
+}
+.col-1{
+   float: left;
+}
+.col-2{
+    width: 120px;
+    height: 120px;
+    background: red;
+    float: left;
+}
+.col-3{
+    height: 200px;
+    width: 120px;
+    background: yellow;
+    float: left;
+}
+
+.clearfix{
+    clear: both;
+}

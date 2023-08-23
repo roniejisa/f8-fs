@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    padding: 25px;
+    border-radius: 15px;
+    background: #334455;
+}
+h1{
+    margin-bottom: 13px;
+}
+
+h1 span{
+    color: #f99e17;
+}
+.contact{
+    max-width: 620px;
+    color: white;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 180px;
+    outline: none;
+}
+p{
+    margin-bottom: 10px;
+}
+
+button{
+    padding: 10px 15px;
+    background: #f8db35;
+    border-radius: 5px;
+    border:none;
+    cursor: pointer;
+}
+
+footer:hover button{
+    color: white;
+    background: #f99e17;
+}
+
+footer:hover input::placeholder{
+    color: #f99e17;
+}
+
+footer:hover input{
+    background: #ddd;
+}

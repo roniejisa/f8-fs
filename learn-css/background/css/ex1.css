@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(243, 169, 73);
+    /* background-image: url("../images/sergey-vinogradov-5jZu5zGTSJQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+.banner{
+    background-image: url("../images/sergey-vinogradov-5jZu5zGTSJQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content{
+    /* background-color: rgba(0, 0, 0, 0.347); */
+}
