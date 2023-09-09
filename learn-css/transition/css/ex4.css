@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.toggle input{
+    display: none;
+}
+
+.toggle .switch{
+    width: 60px;
+    height: 30px;
+    background: gray;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 99px;
+    transition: all .5s linear;
+}
+
+.toggle .switch::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: white;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 99px;
+    transition: all .5s linear;
+}
+
+.toggle input[type="checkbox"]:checked + .switch::before{
+    left: calc(100% - 30px);
+}
+
+
+.toggle input[type="checkbox"]:checked + .switch{
+    background: green;
+}

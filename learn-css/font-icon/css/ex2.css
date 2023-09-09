@@ -1,0 +1,44 @@
+
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    position: relative;
+}
+label::before{
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+
+label::after{
+    content: '\f00c';
+    font-family: 'FontAwesome';
+    position: absolute;
+    display: none;
+    font-weight: bold;
+    left: 5px;
+    top: -5px;
+    color: gray;
+}
+
+input:checked + label::before{
+    border-color: green;
+}
+
+input:checked + label::after{
+    color: green;
+    display: block;
+}
+
+input:disabled + label::before{
+    border-color: gray;
+}
+
+input:disabled:checked + label::after{
+    color: gray;
+}

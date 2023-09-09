@@ -1,0 +1,41 @@
+body {
+	display: grid;
+	font-size: 30px;
+	font-weight: 700;
+	max-height: 100vh;
+	place-items: center;
+}
+
+a {
+	background-image: linear-gradient(to right, #54b3d6, red 50%, #333 50%);
+	background-size: 200% 100%;
+	background-position: -100%;
+	display: inline-block;
+	padding: 5px 0;
+	position: relative;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: 0.3s ease-in-out;
+	transition-property: background-position;
+}
+
+/* a:before {
+    content: "";
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: 0.3s ease-in-out;
+    transition-property: width;
+  } */
+
+a:hover {
+	background-position: 0;
+}
+
+/* a:hover::before {
+    width: 100%;
+  } */

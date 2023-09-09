@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    padding: 50px;
+    max-width: 80%;
+    margin: 0 auto;
+    background: gray;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.tab-menu li + li{
+    flex: 1;
+    border-left: 1px solid gray;
+}
+
+.tab-menu label{
+    width: 100%;
+    display: block;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+    background: white;
+    border: 2px solid white;
+    transition-property: color, background;
+    transition: .4s ease-in-out
+}
+
+.tab-menu label:hover{
+    color: white;
+    background: #36A4F8;
+}
+
+.tab-menu{
+    border-bottom: 1px solid gray;
+}
+
+.tab_content{
+    perspective: 800px;
+    position: relative;
+    background: white;
+}
+
+input[value="1"]:checked ~ .tab-menu label[for="tab-1"],
+input[value="2"]:checked ~ .tab-menu label[for="tab-2"],
+input[value="3"]:checked ~ .tab-menu label[for="tab-3"],
+input[value="4"]:checked ~ .tab-menu label[for="tab-4"]{
+    color: white;
+    background: #36A4F8;
+}
+
+
+.tab_content .tab-item{
+    padding: 15px;
+    position: absolute;
+    transition: all .4s linear;
+    transform-origin: top center;
+    perspective-origin: center;
+    transform: rotate3d(-1, 0, 0, 90deg);
+    background: white;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+input[value="1"]:checked ~ .tab_content .tab-1,
+input[value="2"]:checked ~ .tab_content .tab-2,
+input[value="3"]:checked ~ .tab_content .tab-3,
+input[value="4"]:checked ~ .tab_content .tab-4{
+    transform-origin: 50% 0%;
+    transform: rotate3d(0, 0, 0, 0deg);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}

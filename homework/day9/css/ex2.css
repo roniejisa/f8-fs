@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    max-width: 90%;
+    margin: 0 auto;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.item{
+    flex: 0 0 calc(100% / 3 - 15px);
+    position: relative;
+    padding: 30px;
+    border: 1px solid #f0f0f2;
+}
+
+.item .image{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .4s ease;
+}
+
+.item .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.item:hover .image{
+    opacity: 1;
+}
+.item .border{
+    position: absolute;
+    inset: 0;
+    transition: margin .4s .1s ease, border-color .4s ease;
+    border: 1px solid transparent;
+}
+
+.item:hover .border{
+    margin: 15px;
+    border-color: white;
+}
+
+.item .item__content{
+    position: relative;
+    transition: color .4s ease;
+    overflow: hidden;
+}
+
+.item .item__content .icon i{
+    font-size: 24px;
+    color: #ac7f6d;
+}
+.item .icon{
+    display: inline-block;
+    transition: transform .2s linear;
+    margin-bottom: 25px;
+}
+
+
+/* Thu nhỏ icon */
+.item:hover .icon{
+    transform: scale(0);
+}
+
+.item h3{
+    position: relative;
+    transition: top .2s linear;
+    top: 0;
+}
+
+.item p{
+    position: relative;
+    transition: top .2s linear;
+    top: 0;
+}
+
+.item a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    display: block;
+    top: 30px;
+    transition: top .2s ease,color .2s ease;
+}
+
+.icon_anchor{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 50%;
+    border:1px solid white;
+    text-align: center;
+    margin-left: 5px;
+    font-size: 12px;
+    transition: background-color .2s linear, color .2s linear;
+}
+
+.item:hover .item__content{
+    color: white
+}
+
+.item:hover h3{
+    top: -50px;
+}
+
+.item:hover p{
+    top: -50px;
+}
+
+.item:hover a{
+    top: 0;
+    color: white;
+}
+
+.item a:hover .icon_anchor{
+    background-color: white;
+    color: black;
+}

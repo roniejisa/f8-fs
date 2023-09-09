@@ -1,0 +1,16 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.content h1{
+    transition-property: padding-left;
+    transition-duration: 1s;
+}
+
+.content:hover h1{
+    padding-left: 10px;
+    color:red
+}

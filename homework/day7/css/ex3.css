@@ -1,0 +1,94 @@
+@font-face {
+    font-family: Asap;
+    src: url(../fonts/Asap/Asap-Regular.ttf);
+}
+body{
+    font-family: Asap;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.project{
+    flex: 0 0 33.33333%;
+    margin: 0 -20px 20px;
+    position: relative;
+}
+
+.project img{
+    width: 100%;
+}
+
+.projects .project__image{
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    line-height: 0;
+}
+.projects .project__image::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00000075;
+    top: 0;
+    left: 0;
+}
+
+.project__info{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.project__info a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.project__info p{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+}
+
+.project__info p span{
+    font-weight: bold;
+}
+.menu{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a p{
+    margin: 0;
+}
+
+.menu li a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 15px;
+    background: #e4e4e4;
+    text-align: center;
+    color: black;
+    border-radius: 30px;
+}
+
+.menu li a.active{
+    background: #af793a;
+    color: white;
+}

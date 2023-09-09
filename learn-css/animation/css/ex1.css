@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    padding: 30px;
+}
+
+@keyframes move {
+    from {
+        left: 0;
+        top: 0;
+        rotate: 90deg;
+    }
+    
+    25%{
+        top: 0;
+        left: 100%;
+        translate: -100%;
+        rotate: 180deg;
+    }
+
+    50%{
+        top: 100%;
+        left: 100%;
+        translate: -100% -100%;
+        rotate: 270deg;
+    }
+
+    75%{
+        top: 100%;
+        left: 0;
+        translate: 0 -100%;
+        rotate: 360deg;
+    }
+
+    to{
+        top: 0;
+        left: 0;
+        rotate: 450deg;
+    }
+}
+
+.box{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.item{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: red;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}

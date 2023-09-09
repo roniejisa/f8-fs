@@ -1,0 +1,10 @@
+:root{
+    --primary-color: #ababab;
+    --secondary: blue;
+    -fontSize: 20px;
+}
+
+body{
+    font-size: var(--fontSize);
+    color: var(--primary-color);
+}

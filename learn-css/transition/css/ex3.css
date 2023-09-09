@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 30px;
+}
+
+.positions{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.positions .item{
+    flex: 0 0 calc(100% / 4);
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    position: relative;
+}
+.positions span{
+    display: block;
+    text-align: center;
+}
+
+.positions i {
+    width: 50px;
+    height: 50px;
+    border: 1px dashed blue;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+    transition: all .4s linear;
+    color: blue;
+}
+.positions .item:hover i{
+    border-color:  white;
+}
+
+.positions .item::before{
+    content: '';
+    background: blue;
+    bottom: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transition: top .4s ease;
+}
+.positions h2{
+    transition: color .4s linear;
+    position: relative;
+    z-index: 1;
+}
+
+.positions span{
+    position: relative;
+    z-index: 1;
+}
+.positions .item:hover::before{
+    top: 0;
+}
+.positions .item:hover h2,
+.positions .item:hover p{
+    color: white;
+}
+
+.item p{
+    transition: all .4s linear;
+    position: relative;
+    z-index: 1;
+}
